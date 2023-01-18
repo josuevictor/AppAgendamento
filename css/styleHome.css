@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+body{
+  background: #D9D9D9;
+}
+
 img{
   width: 30px;
 }
@@ -21,8 +25,35 @@ nav ul li{
 
 p{
   font-weight: 700;
+  margin: .5rem -1rem;
 }
 
 main{
   padding: 2rem;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  height: 70vh;
+  margin-bottom: 1rem;
+}
+
+.cards-container div{
+  width: 400px;
+  height: 70px;
+  border-radius: 5px;
+  background: #2173BF;
+  margin-bottom: 2rem;
+}
+
+.btnAddEvent{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btnAddEvent img{
+  grid-column: 4;
 }

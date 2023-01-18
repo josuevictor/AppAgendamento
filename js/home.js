@@ -1,3 +1,7 @@
+/*Data*/
+
+const lista = [];
+
 const currentDate = document.querySelector('p.containerCurrentDate')
 
 const textcurrentDay = new Date().getDay()
@@ -16,11 +20,19 @@ switch (textcurrentDay) {
     currentDate.append(`Terça - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
     break;
   case 3:
-    currentDate.append('Quarta')
-    break;
+    currentDate.append(`Quarta - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
+  break;
 
   default:
     break;
+};
+
+/*Evento btn AddEvent*/
+
+
+function AddEvent(){
+  lista.push('cliente');
+  console.log(lista);
 }
 
 
