@@ -30,10 +30,16 @@ switch (textcurrentDay) {
 /*Evento btn AddEvent*/
 
 
-function AddEvent(){
-  lista.push('cliente');
-  console.log(lista);
+const DOM = {
+  card: document.querySelector('.data-table tbody'),
+
+ addCard(){
+    const tr = document.createElement('tr')
+    DOM.card.appendChild(tr)
+  }
+
 }
 
-
-
+function ClickBtnAddCard(){
+  DOM.addCard()
+}
