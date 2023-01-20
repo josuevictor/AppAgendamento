@@ -36,25 +36,22 @@ main{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  height: 70vh;
+  margin-bottom: 1rem;
 }
 
-/*Só um teste, Boy*/
-.data-table tbody tr {
-  border: solid 1px;
-}
-
-.data-table tbody tr td{
-  width: 800px;
+.cards-container div{
+  width: 400px;
   height: 70px;
   border-radius: 5px;
   background: #2173BF;
+  margin-bottom: 2rem;
 }
 
 .btnAddEvent{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .btnAddEvent img{
