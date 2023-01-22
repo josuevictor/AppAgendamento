@@ -31,15 +31,9 @@ switch (textcurrentDay) {
 
 
 const DOM = {
-  card: document.querySelector('.data-table tbody'),
-
- addCard(){
-    const tr = document.createElement('tr')
-    DOM.card.appendChild(tr)
+  showModalAddEvent() {
+    alert('clicou aqui')
   }
-
+  
 }
 
-function ClickBtnAddCard(){
-  DOM.addCard()
-}
