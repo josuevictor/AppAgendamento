@@ -1,36 +1,35 @@
+const DOM = {
+
+   calendarDays(){
+    const ul = document.querySelector('.date ul')
+    const li = document.createElement('li')
+    ul.append(li)  
+    
+  }
+  
+}
+
+/*Verifica a quantidade de dias que o mês tem*/
+function diasNoMes(mes, ano) {
+  let data = new Date(ano, mes, 0);
+  return data.getDate();
+}
+
+let currentMonth = new Date()
+let currentYear = new Date()
+let countDaysMonth = diasNoMes(currentMonth.getMonth()+1 , currentYear.getFullYear())
+
+for(let i = 1 ; i <= countDaysMonth ; i++){
+  DOM.calendarDays()
+  //console.log(i);
+  function teste(){
+    const li = document.querySelectorAll('.date ul li')
+    for(i = 1 ; i <= countDaysMonth ; i++){
+      console.log(i);
+    }
+  }
+}
+teste()
+/*insere as datas*/
 
 
-
-// const currentDate = document.querySelector('p.containerCurrentDate')
-
-// const textcurrentDay = new Date().getDay()
-// const textcurrentDate = new Date().getDate()
-// const textcurrentMonth = new Date().getMonth() + 1
-// const textcurrentYear = new Date().getFullYear()
-
-// switch (textcurrentDay) {
-//   case 0:
-//     currentDate.append(`Domingo - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//     break;
-//   case 1:
-//     currentDate.append(`segunda - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//     break;
-//   case 2:
-//     currentDate.append(`Terça - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//     break;
-//   case 3:
-//     currentDate.append(`Quarta - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//   break;
-//   case 4:
-//     currentDate.append(`Quinta - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//   break;
-//   case 5:
-//     currentDate.append(`Sexta - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//   break;
-//   case 6:
-//     currentDate.append(`Sábado - ${textcurrentDate}/${textcurrentMonth}/${textcurrentYear}`);
-//   break;
-
-//   default:
-//     break;
-// };
