@@ -21,12 +21,10 @@ let countDaysMonth = diasNoMes(currentMonth.getMonth()+1 , currentYear.getFullYe
 
 for(let i = 1 ; i <= countDaysMonth ; i++){
   DOM.calendarDays()
-  //console.log(i);
+  console.log(i);
   function teste(){
-    const li = document.querySelectorAll('.date ul li')
-    for(i = 1 ; i <= countDaysMonth ; i++){
-      console.log(i);
-    }
+    const li = document.querySelector('.date ul li')
+    li.innerHTML = 1
   }
 }
 teste()

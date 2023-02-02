@@ -69,6 +69,9 @@ main{
 
 
 .date ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   background: #3f90db;
   width: 20px;
