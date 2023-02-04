@@ -61,7 +61,6 @@ main{
 }
 
 .calendarBody ul li:first-child{
-  background: red;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -101,5 +100,4 @@ main{
 .date ul li:first-child{
   display: grid;
   grid-column-start: 4;
-  background: rgb(14, 202, 45);
 }

@@ -1,7 +1,7 @@
 let currentMonth = new Date()
 let currentYear  = new Date()
 let weekday      = new Date()
-console.log(weekday.getDay());//Dia da semana(indica a posicao onde será inserido o primeiro elemento <li>) 
+// console.log(weekday.getDay());//Dia da semana(indica a posicao onde será inserido o primeiro elemento <li>) 
 let countDaysMonth = diasNoMes(currentMonth.getMonth()+1 , currentYear.getFullYear())
 /*Manipula os elementos do calendário*/
 const DOM = {
@@ -28,12 +28,13 @@ function diasNoMes(mes, ano) {
 /*insere as datas*/
 for(let i = 1 ; i <= countDaysMonth ; i++){
   DOM.calendarDays()
-  console.log(i);
+  // console.log(i);
   function teste(){
     const li = document.querySelectorAll('.date ul li')
     //li.forEach(element => {console.log(element);})
-    li[0].innerHTML = 1
-    li[1].innerHTML = 2
+    for (i = 1 ; i <= countDaysMonth ; i++){
+      li[i-1].innerHTML = i;
+    }
   }
 }
 
