@@ -17,25 +17,25 @@ textWeekday = document.querySelector('.popupAddEvent p')
 switch (valueWeekday) {
   case 0:
     textWeekday.innerHTML = 'Domingo'
-  break;
+    break;
   case 1:
     textWeekday.innerHTML = 'Segunda'
-  break;
+    break;
   case 2:
     textWeekday.innerHTML = 'Terça'
-  break;   
+    break;   
   case 3:
     textWeekday.innerHTML = 'Quarta'
-  break;
+    break;
   case 4:
     textWeekday.innerHTML = 'Quinta'
-  break;
+    break;
   case 5:
     textWeekday.innerHTML = 'Sexta'
-  break;
+    break;
   case 6:
     textWeekday.innerHTML = 'Sábado'
-  break;
+    break;
 
   default:
     break;
