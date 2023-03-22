@@ -79,13 +79,17 @@ main{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 3rem;
   width: 80vw;
   height: 100px;
   background: #3f90db;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #00000028;
   color: #ffffff;
+}
+
+.popupAddEvent div{
+  text-align: center;
 }
 
 .popupAddEvent .row{

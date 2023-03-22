@@ -4,6 +4,12 @@ let weekday      = new Date()
 let mes          = new Date().getMonth() + 1
 // console.log(weekday.getDay());//Dia da semana(indica a posicao onde será inserido o primeiro elemento <li>) 
 let countDaysMonth = getDaysInMonth(currentMonth.getMonth() + mes , currentYear.getFullYear())
+
+//insere a data atua na div agendar
+const today = new Date()
+defaultDate = document.querySelector('.popupAddEvent h2')
+defaultDate.innerHTML = today.getDate()
+
 /*Manipula os elementos do calendário*/
 const DOM = {
 
@@ -46,8 +52,6 @@ for(let i = 1 ; i <= countDaysMonth ; i++){
     }, 5000)
   }
 }
-
-
 
 insertDates()
 DOM.positionFirstDay()
