@@ -1,3 +1,5 @@
+//Calendar Structure
+
 let currentMonth = new Date()
 let currentYear  = new Date()
 let weekday      = new Date()
@@ -9,6 +11,35 @@ let countDaysMonth = getDaysInMonth(currentMonth.getMonth() + mes , currentYear.
 const today = new Date()
 defaultDate = document.querySelector('.popupAddEvent h2')
 defaultDate.innerHTML = today.getDate()
+
+valueWeekday = weekday.getDay()
+textWeekday = document.querySelector('.popupAddEvent p')
+switch (valueWeekday) {
+  case 0:
+    textWeekday.innerHTML = 'Domingo'
+  break;
+  case 1:
+    textWeekday.innerHTML = 'Segunda'
+  break;
+  case 2:
+    textWeekday.innerHTML = 'Terça'
+  break;   
+  case 3:
+    textWeekday.innerHTML = 'Quarta'
+  break;
+  case 4:
+    textWeekday.innerHTML = 'Quinta'
+  break;
+  case 5:
+    textWeekday.innerHTML = 'Sexta'
+  break;
+  case 6:
+    textWeekday.innerHTML = 'Sábado'
+  break;
+
+  default:
+    break;
+}
 
 /*Manipula os elementos do calendário*/
 const DOM = {
