@@ -3,7 +3,7 @@
 let currentMonth = new Date()
 let currentYear  = new Date()
 let weekday      = new Date()
-let mes          = new Date().getMonth() + 1
+let mes          = new Date().getMonth()
 // console.log(weekday.getDay());//Dia da semana(indica a posicao onde será inserido o primeiro elemento <li>) 
 let countDaysMonth = getDaysInMonth(currentMonth.getMonth() + mes , currentYear.getFullYear())
 
