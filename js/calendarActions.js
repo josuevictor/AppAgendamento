@@ -44,7 +44,11 @@ const action = {
         }
       })
     }
+  },
+
+  nextMonth() {
+    alert('clicou')
+    
   }
 }
-
 action.addEventClick()

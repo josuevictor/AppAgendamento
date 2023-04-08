@@ -18,9 +18,14 @@ nav ul{
   justify-content: space-between;
 }
 
-nav ul li{
+nav ul li {
   list-style: none;
   margin: 1rem 1.5rem;
+}
+
+.fa.fa-bars{
+  font-size: 36px;
+  color: #000;
 }
 
 p{
@@ -75,6 +80,15 @@ main{
   padding: 10px 0;
 }
 
+.month-indicator button{
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+}
+
+
+
 .popupAddEvent{
   display: flex;
   justify-content: space-between;
@@ -117,12 +131,12 @@ main{
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  background: #3f90db;
+  /*background: #3f90db;*/
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  color: #ffffff;
-  font-weight: 700;
+  color: #000;
+  font-weight: 600;
   
 }
 
